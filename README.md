@@ -1,0 +1,2 @@
+# My Main Personal Website (A KeystoneJS Project)
+This site was created using the yoeman generator for keystone (a NodeJS content management system) using handlebars as the view engine, stylus as the CSS3 preprocessor, and MongoDB as the database. The purpose of this site is to help showcase my personal and professional goals, acheivements, and other related projects.
