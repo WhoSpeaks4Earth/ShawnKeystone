@@ -6715,10 +6715,16 @@ button.close {
     display: none !important;
   }
 }
-#header {
+header {
   margin-top: 20px;
 }
-#footer {
+header img {
+  margin-top: -20px;
+}
+.navbar {
+  border: none;
+}
+footer {
   margin-top: 30px;
   border-top: 1px solid gray-lighter;
   padding-top: 30px;
