@@ -9,7 +9,7 @@ exports = module.exports = function (req, res) {
 	locals.section = 'cv';
 
 	// Load the galleries by sortOrder
-	view.query('achievements', keystone.list('Achievement').model.find());
+	view.query('achievements', keystone.list('Achievement').model.find().sort('-startDate'));
 
 	// Render the view
 	view.render('cv');
