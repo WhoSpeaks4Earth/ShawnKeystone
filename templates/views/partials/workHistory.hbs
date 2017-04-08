@@ -1,0 +1,36 @@
+
+<div class="container">
+    {{#if workHistories}}
+    {{#each workHistories}}
+<div class="row">
+    <div class="col-md-3">
+        {{#if @first}}Work History{{/if}}
+    </div>
+    <div class="col-md-9">
+        <div class="panel panel-info">
+        <div class="panel-heading">
+            <h3 class="panel-title">{{name}}</h3>
+        </div>
+        <div class="panel-body">
+            <div class="media">
+                <div class="media-left">
+                    <a href="#">
+                    <img class="media-object" src="{{companyLogo}}" alt="{{company}}">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">{{company}} - {{companyLocation}}</h4>
+                    <br/>
+                    <a href="{{companyUrl}}" target="_blank">{{companyUrl}}</a><br/>
+                    {{startDate}} - {{endDate}}
+                </div>
+                </div>
+        </div>
+        </div>
+    </div>
+</div>
+{{/each}}
+{{else}}
+    I ain't got no jobs son.
+{{/if}}
+</div>

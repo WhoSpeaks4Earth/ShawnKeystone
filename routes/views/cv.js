@@ -11,6 +11,7 @@ exports = module.exports = function (req, res) {
 	// Load the cv info
 	view.query('achievements', keystone.list('Achievement').model.find().sort('-startDate'));
 	view.query('certifications', keystone.list('Certification').model.find().sort('-completedOn'));
+	view.query('workHistories', keystone.list('WorkHistory').model.find().sort('-startDate'));
 
 	// Render the view
 	view.render('cv');
