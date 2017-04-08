@@ -11,8 +11,8 @@ var handlebars = require('express-handlebars');
 // and documentation.
 
 keystone.init({
-	'name': 'ShawnKey',
-	'brand': 'ShawnKey',
+	'name': 'Shawn',
+	'brand': 'Shawn',
 
 	'stylus': 'public',
 	'static': 'public',
