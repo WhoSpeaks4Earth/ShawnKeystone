@@ -8,8 +8,9 @@ exports = module.exports = function (req, res) {
 	// Set locals
 	locals.section = 'cv';
 
-	// Load the galleries by sortOrder
+	// Load the cv info
 	view.query('achievements', keystone.list('Achievement').model.find().sort('-startDate'));
+	view.query('certifications', keystone.list('Certification').model.find().sort('-completedOn'));
 
 	// Render the view
 	view.render('cv');
