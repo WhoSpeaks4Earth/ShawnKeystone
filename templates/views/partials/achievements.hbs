@@ -10,7 +10,7 @@
     <div class="col-md-9">
         <div class="panel panel-info">
         <div class="panel-heading">
-            <h3 class="panel-title">{{name}} <small>{{company}} ({{startDate}} - {{endDate}})</small></h3>
+            <h3 class="panel-title">{{name}} <small>{{company}} ({{date startDate format='MM/YYYY'}} - {{endDate}})</small></h3>
         </div>
         <div class="panel-body">
             {{{details}}}
@@ -24,7 +24,7 @@
     {{/each}}
 {{else}}
 <!-- else -->
-<h3 class="text-muted">Apparently I have achieved nothing.</h3>
+<h3 class="text-muted">Could not find any achievements.</h3>
 {{/if}}
 
 </div>

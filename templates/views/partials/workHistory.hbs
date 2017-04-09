@@ -22,7 +22,7 @@
                     <h4 class="media-heading">{{company}} - {{companyLocation}}</h4>
                     <br/>
                     <a href="{{companyUrl}}" target="_blank">{{companyUrl}}</a><br/>
-                    {{startDate}} - {{endDate}}
+                    {{date startDate format='MM/YYYY'}} - {{endDate}}
                 </div>
                 </div>
         </div>
@@ -31,6 +31,6 @@
 </div>
 {{/each}}
 {{else}}
-    I ain't got no jobs son.
+    Could not find any work history.
 {{/if}}
 </div>

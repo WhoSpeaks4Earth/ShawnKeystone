@@ -19,7 +19,7 @@
                     <tr>
                         <td>{{name}}</td>
                         <td><a href="{{providerUrl}}" target="_blank">{{provider}}</a></td>
-                        <td>{{completedOn}}</td>
+                        <td>{{date completedOn format='MM/DD/YYYY'}}</td>
                     </tr>
                     {{/each}}
                 </tbody>
@@ -27,7 +27,7 @@
         </div>
         
         {{else}}
-            No certifications at this time.
+            Could not find any certifications.
         {{/if}}
     </div>
 </div>
