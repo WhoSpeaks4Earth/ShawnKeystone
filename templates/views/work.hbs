@@ -1,8 +1,15 @@
 
 
 <div class="container">
+    {{#if projects}}
+    {{#each projects}}
     <div class="jumbotron">
-        <h1>Work1</h1>
-        <p>desc of work</p>
+        <h1>{{name}}</h1>
+        <p>{{{description}}}</p>
+        <a class="btn btn-primary" href="{{url}}" role="button">Link</a>
     </div>
+    {{/each}}
+    {{else}}
+    Could not find any projects.
+    {{/if}}
 </div>

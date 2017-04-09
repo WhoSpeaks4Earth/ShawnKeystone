@@ -9,6 +9,7 @@ exports = module.exports = function (req, res) {
 	locals.section = 'work';
 
 	// Load work info
+	view.query('projects', keystone.list('Project').model.find().sort('sortOrder'));
 
 	// Render the view
 	view.render('work');
