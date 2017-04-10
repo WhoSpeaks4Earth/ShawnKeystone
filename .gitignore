@@ -32,3 +32,6 @@ node_modules
 
 #Ignore data directory
 data
+
+#Ignore dev docker compose file
+docker-compose.yml
