@@ -1,0 +1,22 @@
+version: '3'
+services:
+ 
+  mongo:
+    image: mongo
+    command: mongod --smallfiles
+    volumes:
+      - ./data/db:/data/db
+ 
+  web:
+    build: .
+    volumes:
+      - ./:/usr/src/app
+    working_dir: /usr/src/app
+    command: sh -c 'npm install; node keystone'
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mongo
+    environment:
+      MONGO_URI: "mongodb://mongo:27017/shawnkey"
+ 

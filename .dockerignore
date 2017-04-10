@@ -1,5 +1,8 @@
 node_modules
 npm-debug.log
+
+data
+
 public/styles/bootstrap
 public/styles/site
 public/styles/site.styl
