@@ -6725,9 +6725,8 @@ header img {
   border: none;
 }
 footer {
-  margin-top: 30px;
+  margin-top: 20px;
   border-top: 1px solid gray-lighter;
-  padding-top: 30px;
   color: gray-light;
 }
 .gallery-image img {
@@ -6747,7 +6746,7 @@ footer {
   font-weight: lighter;
   font-size: 18px;
 }
-.jumbotron button {
+.jumbotron .btn-primary {
   padding: 15px;
   margin-top: 40px;
   font-size: 16px;
@@ -6766,12 +6765,18 @@ footer {
   display: block;
 }
 blockquote {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 40px;
+}
+blockquote footer {
+  margin-top: 0px;
+  padding-top: 0px;
 }
 footer .list-group-item {
   border: none;
 }
 footer hr {
   margin: 60px 40px 25px 40px;
+}
+.cv-section {
+  margin-top: 25px;
 }
