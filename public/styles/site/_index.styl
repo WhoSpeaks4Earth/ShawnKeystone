@@ -2,39 +2,63 @@
     text-align: center;
     background-color white
 
+    h1 {
+        color: $dark-gray;
+        font-weight: lighter;
+    }
+
     hr {
         display: block;
         width: 20%;
+        border 1px solid $light-gray
     }
 
     p {
-        font-weight: lighter;
-        font-size: 20px;
+        font-weight lighter
+        font-size 22px
+        color $light-gray
     } 
 
-    .btn-primary {
+    .btn-primary.btn-my-work {
         padding: 15px;
         margin-top: 40px;
-        font-size: 16px;
+        width 200px
+        font-size 16px
+        font-weight normal
+        color $dark-gray
+        background-color white
+        border 1px solid $dark-gray
+        transition: width .3s;
+    }
+    .btn-primary.btn-my-work:hover {
+        color $green
+        width 220px
+        border 1px solid $green
     }
 }
 
 .home-highlight-wrap {
 
-    background-color #4c525a
-    padding-top 50px
-    padding-bottom 50px
+    background: linear-gradient(to bottom right, $dark-gray, $green);
+    padding-top 60px
+    padding-bottom 60px
     margin-top 20px
     margin-bottom 20px
 
     .highlight-hover-area {
-        //border: 1px solid black;
         text-align: center;
         padding: 20px;
 
-        a:hover, a:visited {
+        h4
+        {
+            font-weight lighter
+        }
+
+        a, a:hover, a:visited {
             cursor pointer
             text-decoration none
+            color white
+            
         }
 
         i {
@@ -45,14 +69,17 @@
     }
 }
 
+.row-quotes
 
-blockquote {
-    margin-top: 40px;
+    blockquote:nth-child(even)
+        background-color $white-gray
 
-    footer
-    {
-        margin-top: 0px;
-        padding-top: 0px;
-    }
-        
-}
+    blockquote
+        color $dark-gray
+        margin-top 40px
+        padding 25px
+
+        footer
+            color $light-gray
+            margin-top: 0px;
+            padding-top: 0px;
