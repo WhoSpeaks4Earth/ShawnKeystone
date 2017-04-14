@@ -6856,6 +6856,12 @@ footer.footer hr {
 .cv-section {
   margin-top: 30px;
 }
+.cv-section a {
+  color: #3a7d8a;
+}
+.cv-section a:hover {
+  text-decoration: none;
+}
 .cv-section h4 {
   color: #4c525a;
 }
@@ -6865,10 +6871,16 @@ footer.footer hr {
 .cv-section .panel-heading small {
   float: right;
 }
+.row-certs table > thead > tr {
+  background-color: #fff;
+  font-weight: bold;
+  color: #4c525a;
+}
 .container-projects {
   background-color: #f6f9fb;
 }
 .container-projects .jumbotron p {
+  font-weight: bold;
   color: #b1b1b1;
   margin-top: 30px;
   margin-bottom: 30px;
