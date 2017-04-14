@@ -3,6 +3,7 @@
     background-color white
 
     h1 {
+        margin-top 0px
         color: $dark-gray;
         font-weight: lighter;
     }
@@ -10,7 +11,7 @@
     hr {
         display: block;
         width: 20%;
-        border 1px solid $light-gray
+        border 1px solid $dark-gray
     }
 
     p {
@@ -31,7 +32,8 @@
         transition: width .3s;
     }
     .btn-primary.btn-my-work:hover {
-        color $green
+        color $blue
+        font-weight bold
         width 220px
         border 1px solid $green
     }
@@ -39,9 +41,9 @@
 
 .home-highlight-wrap {
 
-    background: linear-gradient(to bottom right, $dark-gray, $green);
-    padding-top 60px
-    padding-bottom 60px
+    background: linear-gradient(to bottom right, $blue, $green);
+    padding-top 85px
+    padding-bottom 85px
     margin-top 20px
     margin-bottom 20px
 
@@ -73,11 +75,12 @@
 
     blockquote:nth-child(even)
         background-color $white-gray
+        border-right 5px solid $blue
 
     blockquote
         color $dark-gray
         margin-top 40px
-        padding 25px
+        padding 35px
 
         footer
             color $light-gray
